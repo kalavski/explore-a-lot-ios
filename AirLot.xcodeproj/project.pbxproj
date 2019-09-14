@@ -3,25 +3,47 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1109263B232D4F270025E020 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109263A232D4F270025E020 /* CardModel.swift */; };
+		1109263E232D56E10025E020 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109263D232D56E10025E020 /* DataService.swift */; };
+		115B530F232D35090027B59F /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115B530E232D35090027B59F /* Assets.swift */; };
+		115B5312232D43480027B59F /* Tags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115B5311232D43480027B59F /* Tags.swift */; };
+		115B5316232D477F0027B59F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115B5315232D477F0027B59F /* MainViewController.swift */; };
+		115B5319232D47C60027B59F /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115B5318232D47C60027B59F /* StartViewController.swift */; };
+		117246BC232D6C230060AB08 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117246BB232D6C230060AB08 /* CardView.swift */; };
+		117246BE232D6C730060AB08 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117246BD232D6C730060AB08 /* CardView.xib */; };
+		117246C2232D77B60060AB08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 117246C1232D77B60060AB08 /* Assets.xcassets */; };
+		117246C5232D84F40060AB08 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117246C4232D84F40060AB08 /* CustomButton.swift */; };
+		1184C224232D498D00427AE6 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184C223232D498D00427AE6 /* DetailsViewController.swift */; };
 		11FE9CB8232D28A100CC7187 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE9CB7232D28A100CC7187 /* AppDelegate.swift */; };
-		11FE9CBA232D28A100CC7187 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE9CB9232D28A100CC7187 /* ViewController.swift */; };
 		11FE9CBD232D28A100CC7187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11FE9CBB232D28A100CC7187 /* Main.storyboard */; };
-		11FE9CBF232D28A400CC7187 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11FE9CBE232D28A400CC7187 /* Assets.xcassets */; };
 		11FE9CC2232D28A400CC7187 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11FE9CC0232D28A400CC7187 /* LaunchScreen.storyboard */; };
+		B816186DD806C0FA7A1AD132 /* Pods_AirLot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C03938A72E5910F7CE3958A /* Pods_AirLot.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1109263A232D4F270025E020 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		1109263D232D56E10025E020 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		115B530E232D35090027B59F /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		115B5311232D43480027B59F /* Tags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tags.swift; sourceTree = "<group>"; };
+		115B5315232D477F0027B59F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		115B5318232D47C60027B59F /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		117246BB232D6C230060AB08 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		117246BD232D6C730060AB08 /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		117246C1232D77B60060AB08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		117246C4232D84F40060AB08 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		1184C223232D498D00427AE6 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		11FE9CB4232D28A100CC7187 /* AirLot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirLot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FE9CB7232D28A100CC7187 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		11FE9CB9232D28A100CC7187 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		11FE9CBC232D28A100CC7187 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		11FE9CBE232D28A400CC7187 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11FE9CC1232D28A400CC7187 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11FE9CC3232D28A400CC7187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C03938A72E5910F7CE3958A /* Pods_AirLot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirLot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		877F65758308CD6D71D941AF /* Pods-AirLot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirLot.release.xcconfig"; path = "Target Support Files/Pods-AirLot/Pods-AirLot.release.xcconfig"; sourceTree = "<group>"; };
+		A0022EA8BCC810F4ECB1CFDA /* Pods-AirLot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirLot.debug.xcconfig"; path = "Target Support Files/Pods-AirLot/Pods-AirLot.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +51,104 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B816186DD806C0FA7A1AD132 /* Pods_AirLot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11092639232D4F1A0025E020 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1109263A232D4F270025E020 /* CardModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1109263C232D56CC0025E020 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1109263D232D56E10025E020 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1109263F232D6BF90025E020 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				117246BB232D6C230060AB08 /* CardView.swift */,
+				117246BD232D6C730060AB08 /* CardView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		115B5310232D433E0027B59F /* Tags */ = {
+			isa = PBXGroup;
+			children = (
+				115B5311232D43480027B59F /* Tags.swift */,
+			);
+			path = Tags;
+			sourceTree = "<group>";
+		};
+		115B5313232D47580027B59F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				117246C6232D971D0060AB08 /* DateViewController */,
+				115B531A232D48990027B59F /* DetailsViewController */,
+				115B5317232D47970027B59F /* StartViewController */,
+				115B5314232D47650027B59F /* MainViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		115B5314232D47650027B59F /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				115B5315232D477F0027B59F /* MainViewController.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		115B5317232D47970027B59F /* StartViewController */ = {
+			isa = PBXGroup;
+			children = (
+				115B5318232D47C60027B59F /* StartViewController.swift */,
+			);
+			path = StartViewController;
+			sourceTree = "<group>";
+		};
+		115B531A232D48990027B59F /* DetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1109263F232D6BF90025E020 /* Views */,
+				1184C223232D498D00427AE6 /* DetailsViewController.swift */,
+			);
+			path = DetailsViewController;
+			sourceTree = "<group>";
+		};
+		117246C3232D84D50060AB08 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				117246C4232D84F40060AB08 /* CustomButton.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		117246C6232D971D0060AB08 /* DateViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DateViewController;
+			sourceTree = "<group>";
+		};
 		11FE9CAB232D28A100CC7187 = {
 			isa = PBXGroup;
 			children = (
 				11FE9CB6232D28A100CC7187 /* AirLot */,
 				11FE9CB5232D28A100CC7187 /* Products */,
+				1D784083C0302A6630D944DA /* Pods */,
+				36EC1E69CF392C0D8F8665A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +163,44 @@
 		11FE9CB6232D28A100CC7187 /* AirLot */ = {
 			isa = PBXGroup;
 			children = (
+				117246C3232D84D50060AB08 /* CustomViews */,
+				1109263C232D56CC0025E020 /* Services */,
+				11092639232D4F1A0025E020 /* Models */,
+				115B5313232D47580027B59F /* ViewControllers */,
+				115B5310232D433E0027B59F /* Tags */,
+				11FE9CC9232D34D600CC7187 /* Assets */,
 				11FE9CB7232D28A100CC7187 /* AppDelegate.swift */,
-				11FE9CB9232D28A100CC7187 /* ViewController.swift */,
 				11FE9CBB232D28A100CC7187 /* Main.storyboard */,
-				11FE9CBE232D28A400CC7187 /* Assets.xcassets */,
 				11FE9CC0232D28A400CC7187 /* LaunchScreen.storyboard */,
 				11FE9CC3232D28A400CC7187 /* Info.plist */,
 			);
 			path = AirLot;
+			sourceTree = "<group>";
+		};
+		11FE9CC9232D34D600CC7187 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				117246C1232D77B60060AB08 /* Assets.xcassets */,
+				115B530E232D35090027B59F /* Assets.swift */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		1D784083C0302A6630D944DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0022EA8BCC810F4ECB1CFDA /* Pods-AirLot.debug.xcconfig */,
+				877F65758308CD6D71D941AF /* Pods-AirLot.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		36EC1E69CF392C0D8F8665A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C03938A72E5910F7CE3958A /* Pods_AirLot.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +210,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11FE9CC6232D28A400CC7187 /* Build configuration list for PBXNativeTarget "AirLot" */;
 			buildPhases = (
+				6B57CC87B63907A0B9F231D1 /* [CP] Check Pods Manifest.lock */,
 				11FE9CB0232D28A100CC7187 /* Sources */,
 				11FE9CB1232D28A100CC7187 /* Frameworks */,
 				11FE9CB2232D28A100CC7187 /* Resources */,
+				1D59BD2C5303AC46114D3D1B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,20 +264,71 @@
 			buildActionMask = 2147483647;
 			files = (
 				11FE9CC2232D28A400CC7187 /* LaunchScreen.storyboard in Resources */,
-				11FE9CBF232D28A400CC7187 /* Assets.xcassets in Resources */,
+				117246BE232D6C730060AB08 /* CardView.xib in Resources */,
+				117246C2232D77B60060AB08 /* Assets.xcassets in Resources */,
 				11FE9CBD232D28A100CC7187 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D59BD2C5303AC46114D3D1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AirLot/Pods-AirLot-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AirLot/Pods-AirLot-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AirLot/Pods-AirLot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B57CC87B63907A0B9F231D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AirLot-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		11FE9CB0232D28A100CC7187 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11FE9CBA232D28A100CC7187 /* ViewController.swift in Sources */,
+				115B5312232D43480027B59F /* Tags.swift in Sources */,
+				117246BC232D6C230060AB08 /* CardView.swift in Sources */,
 				11FE9CB8232D28A100CC7187 /* AppDelegate.swift in Sources */,
+				115B530F232D35090027B59F /* Assets.swift in Sources */,
+				117246C5232D84F40060AB08 /* CustomButton.swift in Sources */,
+				1109263B232D4F270025E020 /* CardModel.swift in Sources */,
+				115B5316232D477F0027B59F /* MainViewController.swift in Sources */,
+				115B5319232D47C60027B59F /* StartViewController.swift in Sources */,
+				1184C224232D498D00427AE6 /* DetailsViewController.swift in Sources */,
+				1109263E232D56E10025E020 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +472,7 @@
 		};
 		11FE9CC7232D28A400CC7187 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0022EA8BCC810F4ECB1CFDA /* Pods-AirLot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +491,7 @@
 		};
 		11FE9CC8232D28A400CC7187 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 877F65758308CD6D71D941AF /* Pods-AirLot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
