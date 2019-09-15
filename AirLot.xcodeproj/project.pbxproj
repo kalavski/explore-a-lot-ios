@@ -17,6 +17,11 @@
 		117246BE232D6C730060AB08 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117246BD232D6C730060AB08 /* CardView.xib */; };
 		117246C2232D77B60060AB08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 117246C1232D77B60060AB08 /* Assets.xcassets */; };
 		117246C5232D84F40060AB08 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117246C4232D84F40060AB08 /* CustomButton.swift */; };
+		117246C8232D98160060AB08 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117246C7232D98160060AB08 /* DateViewController.swift */; };
+		117246CB232DAAB60060AB08 /* ContentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117246CA232DAAB60060AB08 /* ContentService.swift */; };
+		117246CE232DB1D00060AB08 /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117246CD232DB1D00060AB08 /* BudgetViewController.swift */; };
+		117246D1232DB2070060AB08 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117246D0232DB2070060AB08 /* PeopleViewController.swift */; };
+		117246D4232DB2500060AB08 /* ScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117246D3232DB2500060AB08 /* ScoresViewController.swift */; };
 		1184C224232D498D00427AE6 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184C223232D498D00427AE6 /* DetailsViewController.swift */; };
 		11FE9CB8232D28A100CC7187 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE9CB7232D28A100CC7187 /* AppDelegate.swift */; };
 		11FE9CBD232D28A100CC7187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11FE9CBB232D28A100CC7187 /* Main.storyboard */; };
@@ -35,6 +40,11 @@
 		117246BD232D6C730060AB08 /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		117246C1232D77B60060AB08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		117246C4232D84F40060AB08 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		117246C7232D98160060AB08 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
+		117246CA232DAAB60060AB08 /* ContentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentService.swift; sourceTree = "<group>"; };
+		117246CD232DB1D00060AB08 /* BudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetViewController.swift; sourceTree = "<group>"; };
+		117246D0232DB2070060AB08 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		117246D3232DB2500060AB08 /* ScoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresViewController.swift; sourceTree = "<group>"; };
 		1184C223232D498D00427AE6 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		11FE9CB4232D28A100CC7187 /* AirLot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirLot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FE9CB7232D28A100CC7187 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +79,7 @@
 		1109263C232D56CC0025E020 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				117246C9232DAAA30060AB08 /* ContentService */,
 				1109263D232D56E10025E020 /* DataService.swift */,
 			);
 			path = Services;
@@ -94,6 +105,9 @@
 		115B5313232D47580027B59F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				117246D2232DB23A0060AB08 /* ScoresViewController */,
+				117246CF232DB1F70060AB08 /* PeopleViewController */,
+				117246CC232DB1BC0060AB08 /* BudgetViewController */,
 				117246C6232D971D0060AB08 /* DateViewController */,
 				115B531A232D48990027B59F /* DetailsViewController */,
 				115B5317232D47970027B59F /* StartViewController */,
@@ -138,8 +152,41 @@
 		117246C6232D971D0060AB08 /* DateViewController */ = {
 			isa = PBXGroup;
 			children = (
+				117246C7232D98160060AB08 /* DateViewController.swift */,
 			);
 			path = DateViewController;
+			sourceTree = "<group>";
+		};
+		117246C9232DAAA30060AB08 /* ContentService */ = {
+			isa = PBXGroup;
+			children = (
+				117246CA232DAAB60060AB08 /* ContentService.swift */,
+			);
+			path = ContentService;
+			sourceTree = "<group>";
+		};
+		117246CC232DB1BC0060AB08 /* BudgetViewController */ = {
+			isa = PBXGroup;
+			children = (
+				117246CD232DB1D00060AB08 /* BudgetViewController.swift */,
+			);
+			path = BudgetViewController;
+			sourceTree = "<group>";
+		};
+		117246CF232DB1F70060AB08 /* PeopleViewController */ = {
+			isa = PBXGroup;
+			children = (
+				117246D0232DB2070060AB08 /* PeopleViewController.swift */,
+			);
+			path = PeopleViewController;
+			sourceTree = "<group>";
+		};
+		117246D2232DB23A0060AB08 /* ScoresViewController */ = {
+			isa = PBXGroup;
+			children = (
+				117246D3232DB2500060AB08 /* ScoresViewController.swift */,
+			);
+			path = ScoresViewController;
 			sourceTree = "<group>";
 		};
 		11FE9CAB232D28A100CC7187 = {
@@ -320,15 +367,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				115B5312232D43480027B59F /* Tags.swift in Sources */,
+				117246D4232DB2500060AB08 /* ScoresViewController.swift in Sources */,
+				117246D1232DB2070060AB08 /* PeopleViewController.swift in Sources */,
 				117246BC232D6C230060AB08 /* CardView.swift in Sources */,
 				11FE9CB8232D28A100CC7187 /* AppDelegate.swift in Sources */,
 				115B530F232D35090027B59F /* Assets.swift in Sources */,
 				117246C5232D84F40060AB08 /* CustomButton.swift in Sources */,
+				117246CE232DB1D00060AB08 /* BudgetViewController.swift in Sources */,
 				1109263B232D4F270025E020 /* CardModel.swift in Sources */,
 				115B5316232D477F0027B59F /* MainViewController.swift in Sources */,
 				115B5319232D47C60027B59F /* StartViewController.swift in Sources */,
 				1184C224232D498D00427AE6 /* DetailsViewController.swift in Sources */,
 				1109263E232D56E10025E020 /* DataService.swift in Sources */,
+				117246C8232D98160060AB08 /* DateViewController.swift in Sources */,
+				117246CB232DAAB60060AB08 /* ContentService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

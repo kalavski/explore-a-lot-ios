@@ -17,7 +17,7 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var disapproveButton: UIButton!
     @IBOutlet weak var approveButton: UIButton!
     
-    
+    private let contentService: ContentService = ContentService.shared
     private var allOptions: [CardModel] = DataService.content()
     private var chosenTags: [Tags] = []
     
@@ -125,10 +125,15 @@ extension DetailsViewController: TinderSwipeViewDelegate {
     }
     
     func endOfCardsReached() {
-        UIView.animate(withDuration: 0.5, delay: 0.0, options: .curveLinear, animations: {
+        self.contentService.tags = chosenTags
+        UIView.animate(withDuration: 2.0, delay: 0.0, options: .curveLinear, animations: {
             self.approveButton.isHidden = true
             self.disapproveButton.isHidden = true
-        }, completion: nil)
+        }, completion: { _ in
+            if let dateVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: DateViewController.className) as? DateViewController {
+                self.present(dateVC, animated: true, completion: nil)
+            }
+        })
         print("End of all cards")
     }
 }
