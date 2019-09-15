@@ -62,7 +62,7 @@ class DetailsViewController: UIViewController {
         let backGroundImageView = UIImageView(frame:containerView.bounds)
         backGroundImageView.image = UIImage(named:String(Int(1 + arc4random() % (8 - 1))))
         backGroundImageView.contentMode = .scaleAspectFill
-        backGroundImageView.clipsToBounds = true;
+        backGroundImageView.clipsToBounds = true
         containerView.addSubview(backGroundImageView)
         
         let profileImageView = UIImageView(frame:CGRect(x: 25, y: frame.size.height - 80, width: 60, height: 60))
@@ -73,7 +73,7 @@ class DetailsViewController: UIViewController {
         containerView.addSubview(profileImageView)
         
         let labelText = UILabel(frame:CGRect(x: 90, y: frame.size.height - 80, width: frame.size.width - 100, height: 60))
-        labelText.text = cardModel.tag.rawValue
+        labelText.text = "#\(cardModel.tag.rawValue)"
         labelText.numberOfLines = 2
         containerView.addSubview(labelText)
         

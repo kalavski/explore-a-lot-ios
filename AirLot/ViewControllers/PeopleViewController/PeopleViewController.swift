@@ -94,5 +94,4 @@ class PeopleViewController: UIViewController {
         contentService.numberOfInfants = self.numberOfInfants
         super.prepare(for: segue, sender: sender)
     }
-    
 }

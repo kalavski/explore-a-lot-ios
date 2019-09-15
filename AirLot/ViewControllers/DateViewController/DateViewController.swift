@@ -18,7 +18,7 @@ class DateViewController: UIViewController {
     private let contentService: ContentService = ContentService.shared
     private var startDate: Date!
     private var finishDate: Date!
-    private var numberOfDays: Int!
+    private var numberOfDays: Int = 7
     
     private var activeTextField: UITextField!
     
@@ -34,6 +34,11 @@ class DateViewController: UIViewController {
         
         startTextField.addTarget(self, action: #selector(touched(_:)), for: .touchDown)
         finishTextField.addTarget(self, action: #selector(touched(_:)), for: .touchDown)
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        startTextField.text = dateFormatter.string(from: Date())
+        finishTextField.text = dateFormatter.string(from: Calendar.current.date(byAdding: .day, value: 7, to: Date())!)
     }
     
     func createDatePicker(forField field : UITextField){
@@ -73,8 +78,8 @@ class DateViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        contentService.startDate = self.startDate
-        contentService.finishDate = self.finishDate
+        contentService.startDate = self.startDate ?? Date()
+        contentService.finishDate = self.finishDate ?? Calendar.current.date(byAdding: .day, value: 7, to: Date())!
         contentService.numberOfDays = self.numberOfDays
         super.prepare(for: segue, sender: sender)
     }

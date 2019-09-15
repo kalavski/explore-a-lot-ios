@@ -12,12 +12,14 @@ class CardView: UIView {
     
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var imageView: UIImageView!
-    
     @IBOutlet weak var titleLabel: UILabel!
+    
     var cardModel: CardModel! {
         didSet {
             self.imageView.image = UIImage(named: cardModel.tag.rawValue)
-            self.titleLabel.text = cardModel.tag.rawValue
+            self.titleLabel.text = "#\(cardModel.tag.rawValue)"
+            self.titleLabel.backgroundColor = UIColor(red: 21 / 255, green: 47 / 255, blue: 108 / 255, alpha: 1.0)
+            self.titleLabel.layer.cornerRadius = 5
         }
     }
     

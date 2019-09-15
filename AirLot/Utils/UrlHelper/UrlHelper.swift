@@ -30,4 +30,8 @@ struct UrlHelper {
         
        return "http://ec2-54-93-38-93.eu-central-1.compute.amazonaws" + ".com:8080/api/lot/tags/flights?origin=WAW&numberOfAdults="+"\(model.numberOfAdults)"+"&numberOfTeenagers="+"\(model.numberOfTeenagers)&numberOfInfants="+"\(model.numberOfInfants)&numberOfChildren="+"\(model.numberOfChildren)&departureDateStart="+"\(departureDateStart)"+"&departureDateEnd="+"\(departureDateFinish)&tripDurationDays="+"\(numberOfDays)&maxPricePerPerson="+"\(decimalToDouble)&tags=\(tags)"
     }
+    
+    static func luckyUrl(for model: ContentService) -> String {
+        return "http://ec2-54-93-38-93.eu-central-1.compute.amazonaws.com:8080/api/lot/lucky/flights?origin=\(model.origin)&numberOfAdults=\(model.numberOfAdults)&numberOfTeenagers=\(model.numberOfTeenagers)&numberOfChildren=\(model.numberOfChildren)&numberOfInfants=\(model.numberOfInfants)"
+    }
 }

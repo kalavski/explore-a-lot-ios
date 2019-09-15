@@ -15,7 +15,6 @@
 		115B5319232D47C60027B59F /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115B5318232D47C60027B59F /* StartViewController.swift */; };
 		117246BC232D6C230060AB08 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117246BB232D6C230060AB08 /* CardView.swift */; };
 		117246BE232D6C730060AB08 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117246BD232D6C730060AB08 /* CardView.xib */; };
-		117246C2232D77B60060AB08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 117246C1232D77B60060AB08 /* Assets.xcassets */; };
 		117246C5232D84F40060AB08 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117246C4232D84F40060AB08 /* CustomButton.swift */; };
 		117246C8232D98160060AB08 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117246C7232D98160060AB08 /* DateViewController.swift */; };
 		117246CB232DAAB60060AB08 /* ContentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117246CA232DAAB60060AB08 /* ContentService.swift */; };
@@ -26,6 +25,10 @@
 		117246DB232DBAC70060AB08 /* UrlHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117246DA232DBAC70060AB08 /* UrlHelper.swift */; };
 		117246DD232DC72D0060AB08 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117246DC232DC72D0060AB08 /* Results.swift */; };
 		117246E0232DD0230060AB08 /* ResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117246DF232DD0230060AB08 /* ResultCell.swift */; };
+		117246E2232DD5090060AB08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 117246E1232DD5080060AB08 /* Assets.xcassets */; };
+		117246E4232DD9BD0060AB08 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117246E3232DD9BD0060AB08 /* City.swift */; };
+		117246E7232DE4E40060AB08 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117246E6232DE4E40060AB08 /* FinalViewController.swift */; };
+		117246EA232DF1360060AB08 /* LuckyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117246E9232DF1360060AB08 /* LuckyViewController.swift */; };
 		1184C224232D498D00427AE6 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184C223232D498D00427AE6 /* DetailsViewController.swift */; };
 		11FE9CB8232D28A100CC7187 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE9CB7232D28A100CC7187 /* AppDelegate.swift */; };
 		11FE9CBD232D28A100CC7187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11FE9CBB232D28A100CC7187 /* Main.storyboard */; };
@@ -42,7 +45,6 @@
 		115B5318232D47C60027B59F /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		117246BB232D6C230060AB08 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		117246BD232D6C730060AB08 /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
-		117246C1232D77B60060AB08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		117246C4232D84F40060AB08 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		117246C7232D98160060AB08 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 		117246CA232DAAB60060AB08 /* ContentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentService.swift; sourceTree = "<group>"; };
@@ -53,6 +55,10 @@
 		117246DA232DBAC70060AB08 /* UrlHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlHelper.swift; sourceTree = "<group>"; };
 		117246DC232DC72D0060AB08 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		117246DF232DD0230060AB08 /* ResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
+		117246E1232DD5080060AB08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		117246E3232DD9BD0060AB08 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		117246E6232DE4E40060AB08 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
+		117246E9232DF1360060AB08 /* LuckyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyViewController.swift; sourceTree = "<group>"; };
 		1184C223232D498D00427AE6 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		11FE9CB4232D28A100CC7187 /* AirLot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirLot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FE9CB7232D28A100CC7187 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				115B5311232D43480027B59F /* Tags.swift */,
+				117246E3232DD9BD0060AB08 /* City.swift */,
 			);
 			path = Tags;
 			sourceTree = "<group>";
@@ -114,6 +121,8 @@
 		115B5313232D47580027B59F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				117246E8232DF1260060AB08 /* LuckyViewController */,
+				117246E5232DE4D60060AB08 /* FinalViewController */,
 				117246D2232DB23A0060AB08 /* ResultsViewController */,
 				117246CF232DB1F70060AB08 /* PeopleViewController */,
 				117246CC232DB1BC0060AB08 /* BudgetViewController */,
@@ -232,6 +241,22 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		117246E5232DE4D60060AB08 /* FinalViewController */ = {
+			isa = PBXGroup;
+			children = (
+				117246E6232DE4E40060AB08 /* FinalViewController.swift */,
+			);
+			path = FinalViewController;
+			sourceTree = "<group>";
+		};
+		117246E8232DF1260060AB08 /* LuckyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				117246E9232DF1360060AB08 /* LuckyViewController.swift */,
+			);
+			path = LuckyViewController;
+			sourceTree = "<group>";
+		};
 		11FE9CAB232D28A100CC7187 = {
 			isa = PBXGroup;
 			children = (
@@ -271,7 +296,7 @@
 		11FE9CC9232D34D600CC7187 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				117246C1232D77B60060AB08 /* Assets.xcassets */,
+				117246E1232DD5080060AB08 /* Assets.xcassets */,
 				115B530E232D35090027B59F /* Assets.swift */,
 			);
 			path = Assets;
@@ -356,7 +381,7 @@
 			files = (
 				11FE9CC2232D28A400CC7187 /* LaunchScreen.storyboard in Resources */,
 				117246BE232D6C730060AB08 /* CardView.xib in Resources */,
-				117246C2232D77B60060AB08 /* Assets.xcassets in Resources */,
+				117246E2232DD5090060AB08 /* Assets.xcassets in Resources */,
 				11FE9CBD232D28A100CC7187 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,12 +436,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				115B5312232D43480027B59F /* Tags.swift in Sources */,
+				117246E7232DE4E40060AB08 /* FinalViewController.swift in Sources */,
 				117246D4232DB2500060AB08 /* ResultsViewController.swift in Sources */,
 				117246D1232DB2070060AB08 /* PeopleViewController.swift in Sources */,
 				117246D8232DB9950060AB08 /* Networking.swift in Sources */,
 				117246DB232DBAC70060AB08 /* UrlHelper.swift in Sources */,
 				117246BC232D6C230060AB08 /* CardView.swift in Sources */,
+				117246E4232DD9BD0060AB08 /* City.swift in Sources */,
 				117246E0232DD0230060AB08 /* ResultCell.swift in Sources */,
+				117246EA232DF1360060AB08 /* LuckyViewController.swift in Sources */,
 				117246DD232DC72D0060AB08 /* Results.swift in Sources */,
 				11FE9CB8232D28A100CC7187 /* AppDelegate.swift in Sources */,
 				115B530F232D35090027B59F /* Assets.swift in Sources */,

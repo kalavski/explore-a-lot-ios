@@ -31,6 +31,10 @@ class BudgetViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         contentService.maxPrice = maxPrice
-        super.prepare(for: segue, sender: sender)
+        let url = UrlHelper.url(for: ContentService.shared)
+        
+        guard let resultsVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ResultsViewController") as? ResultsViewController else { return }
+        resultsVC.url = url
+        self.present(resultsVC, animated: true, completion: nil)
     }
 }

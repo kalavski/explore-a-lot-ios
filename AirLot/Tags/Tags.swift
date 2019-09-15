@@ -22,16 +22,16 @@ enum Tags: String, CaseIterable {
     case lazy = "lazy"
     case active = "active"
     
-    case lake = "lake"
-    case mountains = "mountains"
-    case beach = "beach"
-    case forest = "forest"
-    case jungle = "jungle"
-    case oriental = "oriental"
-    
-    case crowd = "crowd"
-    case loneliness = "loneliness"
-    
-    case amusement = "amusement"
-    case contemplation = "contemplation"
+//    case lake = "lake"
+//    case mountains = "mountains"
+//    case beach = "beach"
+//    case forest = "forest"
+//    case jungle = "jungle"
+//    case oriental = "oriental"
+//
+//    case crowd = "crowd"
+//    case loneliness = "loneliness"
+//
+//    case amusement = "amusement"
+//    case contemplation = "contemplation"
 }

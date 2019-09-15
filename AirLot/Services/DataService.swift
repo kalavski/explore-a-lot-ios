@@ -12,8 +12,8 @@ class DataService {
     
     static func content() -> [CardModel] {
         var content: [CardModel] = []
-        
-        for item in Tags.allCases {
+        var x = Tags.allCases.shuffled()
+        for item in x[0..<6] {
             content.append(CardModel(tag: item))
         }
         return content
