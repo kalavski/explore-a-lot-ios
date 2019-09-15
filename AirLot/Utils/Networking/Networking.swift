@@ -9,11 +9,11 @@
 import Foundation
 
 protocol Networking {
-    func send(url: String, _ eventHandler: @escaping (Welcome) -> (Void))
+    func send(url: String, _ eventHandler: @escaping (Welcome?) -> (Void))
 }
 
 struct NetworkingImpl: Networking {
-    func send(url: String, _ eventHandler: @escaping (Welcome) -> (Void)) {
+    func send(url: String, _ eventHandler: @escaping (Welcome?) -> (Void)) {
         let sessionConfig = URLSessionConfiguration.default
         sessionConfig.timeoutIntervalForRequest = 60.0
         sessionConfig.timeoutIntervalForResource = 60.0
@@ -23,7 +23,7 @@ struct NetworkingImpl: Networking {
                 let welcome = try JSONDecoder().decode(Welcome.self, from: data!)
                 eventHandler(welcome)
             } catch {
-                print(error)
+                eventHandler(nil)
             }
         }
         task.resume()

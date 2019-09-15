@@ -15,10 +15,11 @@ class ResultsViewController: UIViewController {
     @IBOutlet weak var resultsTableView: UITableView!
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     @IBOutlet weak var noResultsLabel: UILabel!
-    
+    @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var tryAgainButton: CustomButton!
-    
     @IBOutlet weak var goBackButton: CustomButton!
+    
+    @IBOutlet weak var waitingStackView: UIStackView!
     private var selectedIndex: Int!
     var url: String!
     
@@ -28,7 +29,7 @@ class ResultsViewController: UIViewController {
         self.resultsTableView.dataSource = self
         self.resultsTableView.delegate = self
         
-        self.resultsTableView.rowHeight = 230
+        self.resultsTableView.rowHeight = 221
         sendRequest()
     }
 
@@ -44,21 +45,25 @@ class ResultsViewController: UIViewController {
     private func sendRequest() {
         
         UIView.animate(withDuration: 1.0) {
-            self.indicator.isHidden = false
+            self.waitingStackView.isHidden = false
             self.resultsTableView.isHidden = true
             self.noResultsLabel.isHidden = true
             self.tryAgainButton.isHidden = true
             self.goBackButton.isHidden = true
+            self.topLabel.isHidden = true
         }
         
         networking.send(url: url) { (welcome) -> (Void) in
-            self.results = welcome
+            if let welcome = welcome {
+                self.results = welcome
+            }
             DispatchQueue.main.async {
                 self.resultsTableView.reloadData()
                 UIView.animate(withDuration: 1.0, animations: {
-                    self.indicator.isHidden = true
+                    self.waitingStackView.isHidden = true
                     if !self.results.isEmpty {
                         self.resultsTableView.isHidden = false
+                        self.topLabel.isHidden = false
                     } else {
                         self.noResultsLabel.isHidden = false
                         self.tryAgainButton.isHidden = false

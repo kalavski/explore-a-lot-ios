@@ -36,7 +36,7 @@ class DateViewController: UIViewController {
         finishTextField.addTarget(self, action: #selector(touched(_:)), for: .touchDown)
         
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
+        dateFormatter.dateFormat = "yyyy-MMM-dd"
         startTextField.text = dateFormatter.string(from: Date())
         finishTextField.text = dateFormatter.string(from: Calendar.current.date(byAdding: .day, value: 7, to: Date())!)
     }
@@ -56,7 +56,7 @@ class DateViewController: UIViewController {
     
     @objc func donePressed(datePicker: UIDatePicker) {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
+        dateFormatter.dateFormat = "yyyy-MMM-dd"
         let date: String = dateFormatter.string(from: datePicker.date)
         if activeTextField == startTextField {
             DispatchQueue.main.async {
