@@ -27,6 +27,7 @@ class DateViewController: UIViewController {
         
         startTextField.delegate = self
         finishTextField.delegate = self
+        numberOfDaysTextField.delegate = self
         
         createDatePicker(forField: startTextField)
         createDatePicker(forField: finishTextField)
@@ -71,12 +72,11 @@ class DateViewController: UIViewController {
         activeTextField = textField
     }
     
-    override func performSegue(withIdentifier identifier: String, sender: Any?) {
-        super.performSegue(withIdentifier: identifier, sender: sender)
-        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         contentService.startDate = self.startDate
         contentService.finishDate = self.finishDate
         contentService.numberOfDays = self.numberOfDays
+        super.prepare(for: segue, sender: sender)
     }
 }
 

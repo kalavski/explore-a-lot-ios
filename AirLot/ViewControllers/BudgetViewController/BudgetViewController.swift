@@ -11,21 +11,26 @@ import UIKit
 class BudgetViewController: UIViewController {
     
     private let contentService: ContentService = ContentService.shared
+    private var maxPrice: Decimal = 0
     
     @IBAction func chooseBudget(_ sender: UIButton) {
         
         switch sender.tag {
         case 1:
-            contentService.maxPrice = 500
+            maxPrice = 500
         case 2:
-            contentService.maxPrice = 1500
+            maxPrice = 1500
         case 3:
-            contentService.maxPrice = 3000
+            maxPrice = 3000
         case 4:
-            contentService.maxPrice = 6000
+            maxPrice = 6000
         default:
             break
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        contentService.maxPrice = maxPrice
+        super.prepare(for: segue, sender: sender)
+    }
 }

@@ -21,7 +21,11 @@
 		117246CB232DAAB60060AB08 /* ContentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117246CA232DAAB60060AB08 /* ContentService.swift */; };
 		117246CE232DB1D00060AB08 /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117246CD232DB1D00060AB08 /* BudgetViewController.swift */; };
 		117246D1232DB2070060AB08 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117246D0232DB2070060AB08 /* PeopleViewController.swift */; };
-		117246D4232DB2500060AB08 /* ScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117246D3232DB2500060AB08 /* ScoresViewController.swift */; };
+		117246D4232DB2500060AB08 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117246D3232DB2500060AB08 /* ResultsViewController.swift */; };
+		117246D8232DB9950060AB08 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117246D7232DB9950060AB08 /* Networking.swift */; };
+		117246DB232DBAC70060AB08 /* UrlHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117246DA232DBAC70060AB08 /* UrlHelper.swift */; };
+		117246DD232DC72D0060AB08 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117246DC232DC72D0060AB08 /* Results.swift */; };
+		117246E0232DD0230060AB08 /* ResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117246DF232DD0230060AB08 /* ResultCell.swift */; };
 		1184C224232D498D00427AE6 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1184C223232D498D00427AE6 /* DetailsViewController.swift */; };
 		11FE9CB8232D28A100CC7187 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE9CB7232D28A100CC7187 /* AppDelegate.swift */; };
 		11FE9CBD232D28A100CC7187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11FE9CBB232D28A100CC7187 /* Main.storyboard */; };
@@ -44,7 +48,11 @@
 		117246CA232DAAB60060AB08 /* ContentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentService.swift; sourceTree = "<group>"; };
 		117246CD232DB1D00060AB08 /* BudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetViewController.swift; sourceTree = "<group>"; };
 		117246D0232DB2070060AB08 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
-		117246D3232DB2500060AB08 /* ScoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresViewController.swift; sourceTree = "<group>"; };
+		117246D3232DB2500060AB08 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		117246D7232DB9950060AB08 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		117246DA232DBAC70060AB08 /* UrlHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlHelper.swift; sourceTree = "<group>"; };
+		117246DC232DC72D0060AB08 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		117246DF232DD0230060AB08 /* ResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
 		1184C223232D498D00427AE6 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		11FE9CB4232D28A100CC7187 /* AirLot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirLot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FE9CB7232D28A100CC7187 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				1109263A232D4F270025E020 /* CardModel.swift */,
+				117246DC232DC72D0060AB08 /* Results.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -105,7 +114,7 @@
 		115B5313232D47580027B59F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				117246D2232DB23A0060AB08 /* ScoresViewController */,
+				117246D2232DB23A0060AB08 /* ResultsViewController */,
 				117246CF232DB1F70060AB08 /* PeopleViewController */,
 				117246CC232DB1BC0060AB08 /* BudgetViewController */,
 				117246C6232D971D0060AB08 /* DateViewController */,
@@ -181,12 +190,46 @@
 			path = PeopleViewController;
 			sourceTree = "<group>";
 		};
-		117246D2232DB23A0060AB08 /* ScoresViewController */ = {
+		117246D2232DB23A0060AB08 /* ResultsViewController */ = {
 			isa = PBXGroup;
 			children = (
-				117246D3232DB2500060AB08 /* ScoresViewController.swift */,
+				117246DE232DD0160060AB08 /* Cells */,
+				117246D3232DB2500060AB08 /* ResultsViewController.swift */,
 			);
-			path = ScoresViewController;
+			path = ResultsViewController;
+			sourceTree = "<group>";
+		};
+		117246D5232DB9820060AB08 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				117246D9232DBAB70060AB08 /* UrlHelper */,
+				117246D6232DB9870060AB08 /* Networking */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		117246D6232DB9870060AB08 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				117246D7232DB9950060AB08 /* Networking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		117246D9232DBAB70060AB08 /* UrlHelper */ = {
+			isa = PBXGroup;
+			children = (
+				117246DA232DBAC70060AB08 /* UrlHelper.swift */,
+			);
+			path = UrlHelper;
+			sourceTree = "<group>";
+		};
+		117246DE232DD0160060AB08 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				117246DF232DD0230060AB08 /* ResultCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		11FE9CAB232D28A100CC7187 = {
@@ -210,6 +253,7 @@
 		11FE9CB6232D28A100CC7187 /* AirLot */ = {
 			isa = PBXGroup;
 			children = (
+				117246D5232DB9820060AB08 /* Utils */,
 				117246C3232D84D50060AB08 /* CustomViews */,
 				1109263C232D56CC0025E020 /* Services */,
 				11092639232D4F1A0025E020 /* Models */,
@@ -367,9 +411,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				115B5312232D43480027B59F /* Tags.swift in Sources */,
-				117246D4232DB2500060AB08 /* ScoresViewController.swift in Sources */,
+				117246D4232DB2500060AB08 /* ResultsViewController.swift in Sources */,
 				117246D1232DB2070060AB08 /* PeopleViewController.swift in Sources */,
+				117246D8232DB9950060AB08 /* Networking.swift in Sources */,
+				117246DB232DBAC70060AB08 /* UrlHelper.swift in Sources */,
 				117246BC232D6C230060AB08 /* CardView.swift in Sources */,
+				117246E0232DD0230060AB08 /* ResultCell.swift in Sources */,
+				117246DD232DC72D0060AB08 /* Results.swift in Sources */,
 				11FE9CB8232D28A100CC7187 /* AppDelegate.swift in Sources */,
 				115B530F232D35090027B59F /* Assets.swift in Sources */,
 				117246C5232D84F40060AB08 /* CustomButton.swift in Sources */,

@@ -11,10 +11,39 @@ import UIKit
 
 class PeopleViewController: UIViewController {
     
-    private var numberOfAdults: Int = 1
-    private var numberOfTeenagers: Int = 0
-    private var numberOfChildren: Int = 0
-    private var numberOfInfants: Int = 0
+    @IBOutlet weak var adultLabel: UILabel!
+    @IBOutlet weak var teenagerLabel: UILabel!
+    @IBOutlet weak var childrenLabel: UILabel!
+    @IBOutlet weak var infantsLabel: UILabel!
+    
+    private var numberOfAdults: Int = 1 {
+        didSet {
+            DispatchQueue.main.async {
+                self.adultLabel.text = "\(self.numberOfAdults) Adults"
+            }
+        }
+    }
+    private var numberOfTeenagers: Int = 0 {
+        didSet {
+            DispatchQueue.main.async {
+                self.teenagerLabel.text = "\(self.numberOfTeenagers) Teenagers"
+            }
+        }
+    }
+    private var numberOfChildren: Int = 0 {
+        didSet {
+            DispatchQueue.main.async {
+                self.childrenLabel.text = "\(self.numberOfChildren) Children"
+            }
+        }
+    }
+    private var numberOfInfants: Int = 0 {
+        didSet {
+            DispatchQueue.main.async {
+                self.infantsLabel.text = "\(self.numberOfInfants) Infants"
+            }
+        }
+    }
     
     private let contentService: ContentService = ContentService.shared
     
@@ -51,9 +80,19 @@ class PeopleViewController: UIViewController {
         }
     }
     
-    
     @IBAction func onNext(_ sender: UIButton) {
         contentService.numberOfAdults = self.numberOfAdults
+        contentService.numberOfTeenagers = self.numberOfTeenagers
+        contentService.numberOfChildren = self.numberOfChildren
+        contentService.numberOfInfants = self.numberOfInfants
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        contentService.numberOfAdults = self.numberOfAdults
+        contentService.numberOfTeenagers = self.numberOfTeenagers
+        contentService.numberOfChildren = self.numberOfChildren
+        contentService.numberOfInfants = self.numberOfInfants
+        super.prepare(for: segue, sender: sender)
     }
     
 }
